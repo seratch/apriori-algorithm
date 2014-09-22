@@ -4,13 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'apriori'
 
 Gem::Specification.new do |spec|
+
   spec.name          = "apriori-algorithm"
   spec.version       = Apriori::VERSION
   spec.authors       = ["Kazuhiro Sera"]
   spec.email         = ["seratch@gmail.com"]
   spec.summary       = %q{Apriori Algorithm implementation in Ruby}
   spec.description   = %q{Apriori Algorithm implementation in Ruby}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/seratch/apriori-algorithm"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -22,4 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'guard-rspec'
+
 end
