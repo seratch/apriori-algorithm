@@ -4,6 +4,10 @@
 
 ## Installation
 
+[![Gem Version](https://badge.fury.io/rb/apriori-algorithm.svg)](http://badge.fury.io/rb/apriori-algorithm)
+
+[![Build Status](https://travis-ci.org/seratch/apriori-algorithm.svg)](https://travis-ci.org/seratch/apriori-algorithm)
+
 Add this line to your application's Gemfile:
 
 ```ruby
