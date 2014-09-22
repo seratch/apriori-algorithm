@@ -1,6 +1,7 @@
 require 'apriori/analysis_result'
 require 'apriori/association_rule'
 require 'apriori/frequent_item_set'
+require 'set'
 
 #
 # Apriori Algorithm(http://en.wikipedia.org/wiki/Apriori_algorithm) implementation in Ruby.
@@ -121,7 +122,7 @@ module Apriori
     end
 
     def to_all_sub_sets(item_set)
-      (1..(item_set.length)).flat_map { |n| item_set.to_a.combination(n) }.first
+      (1...(item_set.length)).flat_map { |n| item_set.to_a.combination(n) }.first
     end
 
     def calculate_support(item_set, frequencies, transactions)
