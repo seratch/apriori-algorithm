@@ -1,5 +1,2 @@
 language: ruby
-rvm:
-  - 1.9.3
-  - 2.1.0
-script: rspec spec
+script: bundle install && bundle exec rspec spec
